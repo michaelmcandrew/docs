@@ -128,7 +128,7 @@ use BotMan\Drivers\Slack\SlackRTMDriver;
 DriverManager::loadDriver(SlackRTMDriver::class);
 
 $loop = Factory::create();
-$botman = BotManFactory::createForRTM([
+$botman = BotManFactory::createForSocket([
     'slack' => [
         'token' => 'YOUR-SLACK-BOT-TOKEN',
     ],
